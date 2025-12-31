@@ -1,0 +1,201 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 480px;
+}
+
+form {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+
+.two-column {
+  display: flex;
+  gap: 16px;
+}
+
+.two-column > div {
+  flex: 1;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+
+button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+button[type="button"] {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.table-section {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 40px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  form {
+    padding: 22px;
+  }
+
+  .table-section {
+    padding: 0 10px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
